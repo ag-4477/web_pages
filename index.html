@@ -3,43 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      color: #333;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-  </style>
+<style>
+  :root {
+    --accent: #3a5f7d;
+  }
+
+  body {
+    font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 48px 40px;
+    line-height: 1.7;
+    color: #222;
+    background: #fff;
+  }
+
+  .header {
+    margin-bottom: 48px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+  }
+
+  h1 {
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    color: #555;
+    margin-top: 8px;
+  }
+
+  h2 {
+    margin-top: 56px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+    color: var(--accent);
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 20px;
+    background: #fafafa;
+    padding: 14px 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  }
+
+  li b {
+    font-size: 1.05em;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+</style>
 </head>
 <body>
 
-  <h1>Your Name</h1>
-  <p>
-    Undergraduate student / Researcher  
-    <br>
-    Computer Vision, Deep Learning
-  </p>
+<div class="header">
+  <h1>木村 俊太</h1>
+    <p class="subtitle">
+      学部四年  <br>
+      Computer Vision, Deep Learning, Computer graphics
+    </p>
+</div>
 
-  <h2>Projects</h2>
+<h2>Certifications</h2>
   <ul>
     <li>
-      <b>Paddy Leaf Disease Detection</b><br>
-      YOLO-based object detection for rice leaf diseases.<br>
-      <a href="https://github.com/ag-4477/web_pages">GitHub</a>
+      <b>Fundamental Information Technology Engineer Examination (FE)</b><br>
+        基本情報技術者試験（IPA, Japan） — 2024年取得
     </li>
   </ul>
 
-  <h2>Skills</h2>
-  <p>Python, PyTorch, YOLO</p>
+<h2>International Experience</h2>
+  <ul>
+    <li>
+      <b>交換留学（Exchange Student）</b><br>
+        マレーシアにあるUniversiti Malayaにて、交換留学生として在籍（2025年10月〜2026年2月）。<br>
+        研究室に所属し現地学生と共同研究を行い、英語によるコミュニケーション環境下で
+        学術的・文化的な交流を行った。
+    </li>
+  </ul>
 
-</body>
+
+<h2>Skills</h2>
+  <p>
+    プログラミング言語：Python、JavaScript、Java<br>
+    フレームワーク／ツール：PyTorch、YOLO、Blender、AviUtl<br>
+    経験分野：物体検出、データセット構築、モデル評価、XR／VRアプリケーション開発、3Dコンテンツ制作
+  </p>
+
+
+  <h2>Presentations</h2>
+    <ul>
+      <li>
+        <b>NeRFを用いた屋根上積雪の状態の定量化に関する検討</b><br>
+        雪氷研究大会 Sep 8, 2025<br>
+        <a href="https://github.com/ag-4477/prevent_snow_disaster_study_B4">GitHub</a>
+      </li>
+    </ul>
+
+<h2>Hackathons</h2>
+  <ul>
+    <li>
+      <b>XRハッカソン（2回参加）</b><br>
+      イマクリエイト株式会社主催、長岡技術科学大学にて開催されたXRハッカソンに2回参加。<br>
+      VRゴーグルを用いたXR技術をUnityで活用し、主催企業が提示するテーマに基づく短期間のチーム開発を通じて、企画立案から実装・発表までを経験。
+      <ul>
+        <li>
+          <b>第1回：</b>「XR × 10年後に当たり前に使われているアプリケーション」 2025年1月14~15日<br>
+          猫カフェをテーマとしたVR体験型コンテンツを企画・実装・発表。
+        </li>
+        <li>
+          <b>第2回：</b>「収益化を想定したVRアプリケーション」2025年2月25~26日<br>
+          VRゲームの企画・実装・発表。
+          <!-- <a href=""></a> -->
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+<h2>Project & Visual Works</h2>
+  <ul>
+    <li>
+      <b>文字PV制作（AviUtl）</b><br>
+      動画編集ソフトAviUtlを用いて、楽曲「アスノヨゾラ哨戒班」の文字PVを個人制作。<br>
+      歌詞を主役とした映像表現を目的とし、カメラ制御やイージングを用いた
+      文字アニメーションにより、楽曲の展開に合わせた視覚的演出を設計した。<br>
+      <a href="https://youtu.be/GSRoRcBtTGs">動画リンク</a>
+    </li>
+
+    <li>
+      <b>MMDを用いたキャラクター映像制作</b><br>
+      3DCG制作ソフトMikuMikuDance（MMD）を用いて、既存のキャラクターモデル・モーション・背景素材を統合し、
+      映像作品を制作。<br>
+      素材自体は借用であるが、構成設計、シーン構築など
+      「見せ方」の工夫に重点を置いた編集を行った。<br>
+      <a href="https://www.youtube.com/watch?v=lkGa5SBoX8U">動画リンク</a>
+    </li>
+  </ul>
+
+
+
+  </body>
 </html>
